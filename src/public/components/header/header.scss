@@ -1,0 +1,30 @@
+@use '../../scss/abstracts/variables';
+
+.header {
+	display: flex;
+	background: variables.$bg;
+
+	&__container {
+		width: variables.$container;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__menu,
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__link {
+		display: block;
+		padding: 20px 45px;
+		border-left: 1px solid variables.$color-text;
+	}
+
+	&__btn {
+		background: variables.$color;
+		color: variables.$color-decoration;
+	}
+}

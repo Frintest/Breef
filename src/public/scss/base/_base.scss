@@ -1,0 +1,25 @@
+@use '../abstracts/variables';
+
+[class*="__container"] {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+*,
+*::before,
+*::after {
+	font-family: variables.$roboto;
+	font-weight: variables.$roboto-regular;
+}
