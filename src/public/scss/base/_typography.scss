@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 @font-face {
 	font-family: 'Roboto';
 	src: url('../fonts/roboto-regular.woff');
@@ -8,4 +10,15 @@
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.title {
+	font-size: variables.$size-title;
+	color: variables.$color-text;
+	line-height: 70px;
+}
+
+.sub-title {
+	font-size: 18px;
+	color: variables.$color-text;
 }

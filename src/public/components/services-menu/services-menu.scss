@@ -1,10 +1,11 @@
 @use '../../scss/abstracts/variables';
 
 .services-menu {
-	margin: 12px 0 0 0;
+	background: variables.$bg;
 
 	&__container {
 		width: variables.$container;
+		padding-top: 12px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

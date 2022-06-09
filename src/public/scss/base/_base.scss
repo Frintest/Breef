@@ -1,5 +1,12 @@
 @use '../abstracts/variables';
 
+*,
+*::before,
+*::after {
+	font-family: variables.$roboto;
+	font-weight: variables.$roboto-regular;
+}
+
 [class*="__container"] {
 	margin: 0 auto;
 	padding: 0 20px;
@@ -17,9 +24,15 @@
 	flex: 1 1 auto;
 }
 
-*,
-*::before,
-*::after {
-	font-family: variables.$roboto;
-	font-weight: variables.$roboto-regular;
+.btn {
+	display: block;
+	padding: 11px 70px;
+	background: variables.$color;
+	font-size: variables.$size-text;
+	color: variables.$color-decoration;
+	border: 2px solid variables.$color-text;
+
+	&_purple {
+		background: variables.$bg-title;
+	}
 }

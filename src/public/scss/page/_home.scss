@@ -1,0 +1,41 @@
+@use '../abstracts/variables';
+
+// ----- main screen -----
+.screen {
+	padding: 110px 0 0 0;
+	background: variables.$bg;
+
+	&__container {
+		width: variables.$container;
+		padding-right: 70px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		max-width: 424px;
+		padding-top: 40px;
+	}
+
+	&__sub-title {
+		max-width: 424px;
+		margin: variables.$padding-text 0 0 0;
+	}
+
+	&__block-btn {
+		max-width: fit-content;
+		margin: variables.$padding-text 0 0 0;
+	}
+
+	&__btn:not(:first-child) {
+		margin: 12px 0 0 0;
+	}
+
+	&__action {
+		display: block;
+		margin: 15px 0 0 0;
+		font-size: 14px;
+		color: #808080;
+		text-align: center;
+	}
+}
